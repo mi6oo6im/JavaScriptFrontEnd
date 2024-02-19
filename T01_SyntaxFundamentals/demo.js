@@ -10,3 +10,12 @@ function test(x, y) {
 }
 
 test(a , b)
+
+// switch (key) {
+//     case value:
+        
+//         break;
+
+//     default:
+//         break;
+// }
