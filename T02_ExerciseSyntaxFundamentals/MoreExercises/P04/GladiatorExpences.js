@@ -1,8 +1,16 @@
+/**
+ * js doc
+ * @param {number} lostFightsCount 
+ * @param {number} helmPrice 
+ * @param {number} swordPrice 
+ * @param {number} shieldPrice 
+ * @param {number} armorPrice 
+ */
 function gladiExpence(lostFightsCount, helmPrice, swordPrice, shieldPrice, armorPrice) {
-    const brokenHelms = Math.floor(lostFightsCount / 2);
-    const brokenSwords = Math.floor(lostFightsCount / 3);
-    const brokenShield = Math.floor(lostFightsCount / 6);
-    const brokenArmors = Math.floor(lostFightsCount / 12);
+    const brokenHelms = Math.trunc(lostFightsCount / 2);
+    const brokenSwords = Math.trunc(lostFightsCount / 3);
+    const brokenShield = Math.trunc(lostFightsCount / 6);
+    const brokenArmors = Math.trunc(lostFightsCount / 12);
     const totalCost = brokenHelms * helmPrice 
         + brokenShield * shieldPrice 
         + brokenSwords * swordPrice 
