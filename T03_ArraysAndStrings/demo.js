@@ -1,5 +1,11 @@
-function solve(num, ...opArr) {
-    console.log(opArr);
+/**
+ * 
+ * @param {string} text 
+ */
+
+function solve(text) {
+    textArr = text.split(/[A-Z]/)
+    console.log(textArr);
 }
 
-solve(23, 'chop', 'chop', 'chop', 'chop')
+solve('HoldTheDoor')
