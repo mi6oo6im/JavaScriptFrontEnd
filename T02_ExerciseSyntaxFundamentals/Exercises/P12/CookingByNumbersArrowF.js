@@ -1,5 +1,4 @@
-function cookingByNumbers(strNum, op1, op2, op3, op4, op5) {
-    const opsArr = [op1, op2, op3, op4, op5];
+function cookingByNumbers(strNum, ...opsArr) {
     let num = Number(strNum)
     const operations = {
         chop : (x) => x / 2,
