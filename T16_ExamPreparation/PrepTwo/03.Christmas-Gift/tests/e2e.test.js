@@ -3,8 +3,8 @@ const { expect } = require('chai');
 
 const host = 'http://localhost:3000'; // Application host (NOT service host - that can be anything)
 
-const DEBUG = false;
-const slowMo = 500;
+const DEBUG = false; // change to true for debug
+const slowMo = 500; // change to 2500 for debug
 
 const mockData = {
   list: [
